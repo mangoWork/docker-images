@@ -1,0 +1,9 @@
+version: '2'
+services:
+  zookeeper:
+    build: ./services/zk-docker
+    image: twinsen/zookeeper:3.4.8
+
+  HBase:
+    build: ./services/hbase-docker
+    image: twinsen/hbase:2.0

@@ -1,0 +1,9 @@
+version: '2'
+services:
+  zookeeper:
+    build: ./services/hive-docker/2.1.1
+    image: twinsen/zookeeper:3.4.8
+
+  HBase:
+    build: ./services/spark-docker/2.1.0
+    image: twinsen/hbase:2.0
