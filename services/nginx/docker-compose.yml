@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  nginx-blog:
+    image: daocloud.io/library/nginx:stable-perl
+    container_name: nginx
+    volumes:
+      - "./volume/config/:/etc/nginx/"
+      - "/home/dlm/work/blog:/home/dlm/work/blog"
+      - "./volume/log:/home/dlm/work/log"
+    ports:
+      - "80:80"
+
